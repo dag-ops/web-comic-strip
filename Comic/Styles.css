@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-family: "Bangers", cursive, sans-serif;
+    letter-spacing: 2px;
+}
+
+.comic {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid #222;
+    border-radius: 18px;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.speech-bubble {
+    position: absolute;
+    background: white;
+    border: 2px solid #2d3748;
+    border-radius: 18px;
+    padding: 8px 12px;
+    font-family: "Comic Sans MS", "Bangers", cursive, sans-serif;
+    font-size: 14px;
+    color: #1a202c;
+    max-width: 190px;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 24px;
+    border-width: 12px 10px 0;
+    border-style: solid;
+    border-color: #2d3748 transparent transparent;
+    display: block;
+    width: 0;
+}
+
+.speech-bubble p {
+    margin: 0;
+}
+
+.bubble1 {
+    top: 13%;
+    left: 23%;
+}
+
+.bubble2 {
+    top: 15%;
+    left: 60%;
+}
+
+.bubble3 {
+    top: 22%;
+    left: 15%;
+}
+
+.bubble4 {
+    top: 20%;
+    left: 8%;
+}
+
+.bubble5 {
+    top: 11%;
+    left: 67%;
+}
+
+.bubble6 {
+    top: 8%;
+    left: 16%;
+}
+
+@media (max-width: 800px) {
+body {
+    padding: 8px;
+}
+header h1 {
+    font-size: 24px;
+}
+.comic {
+    padding: 8px;
+    gap: 8px;
+}
+.speech-bubble {
+    font-size: 10px;
+    padding: 5px 8px;
+    max-width: 120px;
+}
+}
+
+footer {
+margin-top: 20px;
+padding: 15px;
+text-align: center;
+background: #222;
+color: white;
+border-radius: 10px;
+font-size: 14px;
+}
+
+footer p {
+margin: 5px 0;
+}
